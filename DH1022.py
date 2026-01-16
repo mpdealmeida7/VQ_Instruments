@@ -1,0 +1,83 @@
+
+import pyvisa
+
+import time
+
+rm = pyvisa.ResourceManager()  # or ResourceManager('@py') to force the pure Python backend
+#print(rm.list_resources())
+
+#usb_resources = rm.list_resources("USB?*INSTR")
+#print(usb_resources)
+
+inst=rm.open_resource('USB0::0x1AB1::0x0642::DG1ZA231701902::INSTR')
+
+
+# Optional: speed it up
+inst.timeout = 5000  # ms
+inst.write_termination = '\n'
+inst.read_termination  = '\n'
+
+# Identify
+print(inst.query('*IDN?'))
+
+
+
+def set_waveform(inst, ch:int, wave:str, freq_hz:float, ampl_vpp:float, offset_v:float=0.0):
+    """
+    wave: 'SIN', 'SQU', 'RAMP', 'PULSE', 'NOIS', 'ARB', 'DC'
+    """
+    assert ch in (1, 2)
+    cmd = f":SOURce{ch}:APPLy:{wave} {freq_hz},{ampl_vpp},{offset_v}"
+    inst.write(cmd)
+    inst.query('*OPC?')  # wait until applied
+
+def ch_on(inst,ch:int):
+    cmd=f":OUTP{ch} ON"
+    inst.write(cmd)
+
+def ch_off(inst,ch:int):
+    cmd=f":OUTP{ch} OFF"
+    inst.write(cmd)
+
+
+# Examples:
+freq1=100_000.0
+
+freq2=200_000.0
+
+ch_on(inst,1)
+ch_on(inst,2)
+
+
+set_waveform(inst, 1, 'SQU',  freq1, 2.0, 0.0)  # 1 kHz, 2 Vpp, 0 V offset
+set_waveform(inst, 2, 'SIN', freq2, 4.0, 0.0)  # 100 kHz, 4 Vpp
+
+
+time.sleep(10)
+
+# Enable outputs
+ch_off(inst,1)
+ch_off(inst,2)
+
+#Set Load
+
+def set_load(inst, ch:int, load:str):
+    """
+    Load: "50" or "INF
+    """
+    if load=='50':
+        cmd=f':OUTP{ch}:LOAD 50'
+    else:
+        cmd=f':OUTP{ch}:LOAD INF'
+    inst.write(cmd)
+
+
+
+def set_phase_deg(inst, ch:int, phase_deg:float):
+    assert ch in (1, 2)
+    inst.write(f":SOURce{ch}:PHAS {phase_deg}")
+    inst.query('*OPC?')
+
+
+
+
