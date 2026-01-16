@@ -38,29 +38,9 @@ def ch_on(inst,ch:int):
 def ch_off(inst,ch:int):
     cmd=f":OUTP{ch} OFF"
     inst.write(cmd)
-
-
-# Examples:
-freq1=100_000.0
-
-freq2=200_000.0
-
-ch_on(inst,1)
-ch_on(inst,2)
-
-
-set_waveform(inst, 1, 'SQU',  freq1, 2.0, 0.0)  # 1 kHz, 2 Vpp, 0 V offset
-set_waveform(inst, 2, 'SIN', freq2, 4.0, 0.0)  # 100 kHz, 4 Vpp
-
-
-time.sleep(10)
-
-# Enable outputs
-ch_off(inst,1)
-ch_off(inst,2)
-
+    
+    
 #Set Load
-
 def set_load(inst, ch:int, load:str):
     """
     Load: "50" or "INF
@@ -71,12 +51,37 @@ def set_load(inst, ch:int, load:str):
         cmd=f':OUTP{ch}:LOAD INF'
     inst.write(cmd)
 
-
-
+#Set Phase
 def set_phase_deg(inst, ch:int, phase_deg:float):
     assert ch in (1, 2)
     inst.write(f":SOURce{ch}:PHAS {phase_deg}")
     inst.query('*OPC?')
+
+
+
+# Examples:
+freq1=100_000.0
+
+freq2=100_000.0
+
+ch_on(inst,1)
+ch_on(inst,2)
+
+set_phase_deg(inst,2,25.0)
+
+set_load(inst,1,'50')
+set_load(inst,2,'50')
+
+
+set_waveform(inst, 1, 'SIN',  freq1, 2.0, 0.0)  # 1 kHz, 2 Vpp, 0 V offset
+set_waveform(inst, 2, 'SIN', freq2, 2.0, 0.0)  # 100 kHz, 4 Vpp
+
+
+time.sleep(60)
+
+# Enable outputs
+ch_off(inst,1)
+ch_off(inst,2)
 
 
 
