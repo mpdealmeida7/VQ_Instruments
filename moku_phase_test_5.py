@@ -3,8 +3,8 @@
 """
 Moku:Lab Phasemeter — Live Phase-Difference Plot (Δφ = φ2 - φ1)
 
-- Deploys/configures Phasemeter for two external 100 kHz tones (50 Ω, DC).
-- Locks PLLs around 100 kHz (1 kHz bandwidth).
+- Deploys/configures Phasemeter for two external tones (50 Ω, DC).
+- Locks PLLs around f=f1=f2 frequencies (1 kHz bandwidth).
 - Continuously computes Δφ and plots it live (wrapped to ±180°).
 - Prints a short console update once per second.
 - Stop with Ctrl+C.

@@ -57,6 +57,11 @@ def set_phase_deg(inst, ch:int, phase_deg:float):
     inst.write(f":SOURce{ch}:PHAS {phase_deg}")
     inst.query('*OPC?')
 
+#Sync Phase
+def sunc_phase(inst, ch:int):
+    cmd=f':SORce{ch}:PHAS:SYNC'
+    inst.write(cmd)
+    inst.query('*OPC?')
 
 
 # Examples:
@@ -77,11 +82,11 @@ set_waveform(inst, 1, 'SIN',  freq1, 2.0, 0.0)  # 1 kHz, 2 Vpp, 0 V offset
 set_waveform(inst, 2, 'SIN', freq2, 2.0, 0.0)  # 100 kHz, 4 Vpp
 
 
-time.sleep(60)
+# time.sleep(60)
 
-# Enable outputs
-ch_off(inst,1)
-ch_off(inst,2)
+# # Enable outputs
+# ch_off(inst,1)
+# ch_off(inst,2)
 
 
 
