@@ -1,75 +1,87 @@
 
-# ===== Moku:Lab — Phasemeter-only phase difference measurement =====
-# Hardware hookup: Out1 -> splitter -> In1 and In2 (50 Ω coax, matched length)
-# Software: pip install moku ; install mokucli; mokucli instrument download <ver>
-# References: generate_output / set_frontend / set_pm_loop / get_data
+#!/usr/bin/env python3
+"""
+Live phase-difference readout with Moku:Lab Phasemeter
+
+Hardware:
+  - External AWG: CH1 -> Moku Input 1 (100 kHz, 0°), CH2 -> Moku Input 2 (100 kHz, 45°)
+  - Moku:Lab Phasemeter instrument
+
+Stop:
+  - Press Ctrl+C to end the loop cleanly.
+
+Notes:
+  - The Phasemeter API returns 'phase' per channel. In the Phasemeter data model,
+    phase is reported in cycles in legacy streaming; the high-level get_data()
+    accessor returns a 'phase' field which we convert to degrees as phase*360.
+    We wrap Δφ to (-180°, 180°] for readability.
+"""
 
 import time
-import numpy as np
+from math import fmod
 from moku.instruments import Phasemeter
 
-MOKU_IP     =  'localhost:8090'   # <-- set your Moku:Lab IP
-FREQ_HZ     = 1e6         # test tone (1 MHz)
-AMP_VPP     = 0.5               # 0.5 Vpp on Out1
-READS       = 64                # number of averaged readings
-SLEEP_S     = 0.05              # time between polls
+# --- USER: set your Moku's IP or serial here ---
+MOKU_TARGET = 'localhost:8090 ' # e.g., "192.168.1.100"
 
-def wrap_deg(x):
-    """Wrap angle(s) in degrees to (-180, 180]."""
-    return (x + 180.0) % 360.0 - 180.0
+# Acquisition / PLL config
+F_TONE_HZ = 100e3         # 100 kHz
+PLL_BW    = "1kHz"             # loop bandwidth: '1Hz','10Hz','100Hz','1kHz','10kHz','100kHz' (Moku:Lab supports up to 100kHz)
+POLL_SEC  = 0.1                # polling interval for get_data()
 
-def cycles_or_radians_to_deg(diff_values):
-    """
-    Heuristic unit-detection: the Phasemeter 'phase' field is numeric; depending
-    on API generation/stream, it may be radians or cycles (older pymoku stream).
-    We examine the raw differences and convert to degrees accordingly.
-    """
-    a = np.asarray(diff_values)
-    m = np.nanmedian(np.abs(a))
-    # If typical magnitude << 0.8 -> assume cycles; if <~3.5 -> radians; else already degrees.
-    if m < 0.8:        # cycles (~<0.8 cyc)
-        return wrap_deg(a * 360.0)
-    elif m < 3.5:      # radians (~<pi+ margin)
-        return wrap_deg(np.degrees(a))
-    else:              # likely already degrees
-        return wrap_deg(a)
+def wrap_deg_pm180(x_deg: float) -> float:
+    """Wrap angle to (-180, 180] degrees."""
+    # Python fmod keeps sign; adjust to desired interval
+    y = fmod(x_deg + 180.0, 360.0)
+    if y < 0:
+        y += 360.0
+    return y - 180.0
 
-# Connect Phasemeter
-pm = Phasemeter(MOKU_IP, force_connect=True)
+def main():
+    i = Phasemeter(MOKU_TARGET, force_connect=True)
 
-try:
-    # Generate a sine on Out1 (0.5 Vpp @ 1 MHz)
-    pm.generate_output(channel=1, amplitude=AMP_VPP, frequency=FREQ_HZ, signal='Sine')  # Phasemeter DAC
-    # Frontends: 50 Ω, DC, 10 Vpp range (adjust range to your signal level)
-    pm.set_frontend(channel=1, impedance="50Ohm", coupling="DC", range="10Vpp")
-    pm.set_frontend(channel=2, impedance="50Ohm", coupling="DC", range="10Vpp")
+    try:
+        # --- Front-end: 50 Ω, DC-coupled, 10 Vpp (safe default) ---
+        # Choose 1Vpp if your AWG amplitude is small; avoid clipping.
+        i.set_frontend(channel=1, impedance="50Ohm", coupling="DC", range="10Vpp")
+        i.set_frontend(channel=2, impedance="50Ohm", coupling="DC", range="10Vpp")
 
-    # PLL: lock both channels near FREQ_HZ with 1 kHz bandwidth
-    pm.set_pm_loop(channel=1, auto_acquire=False, frequency=FREQ_HZ, bandwidth='1kHz')
-    pm.set_pm_loop(channel=2, auto_acquire=False, frequency=FREQ_HZ, bandwidth='1kHz')
+        # --- PLLs: lock both channels around 100 kHz with 1 kHz BW ---
+        # For a known tone, disable auto-acquire and set frequency explicitly for fast, stable lock.
+        i.set_pm_loop(channel=1, auto_acquire=False, frequency=F_TONE_HZ, bandwidth=PLL_BW)
+        i.set_pm_loop(channel=2, auto_acquire=False, frequency=F_TONE_HZ, bandwidth=PLL_BW)
 
-    # Give the loops a moment to settle
-    time.sleep(0.5)
+        # Optional: ensure fresh lock
+        i.reacquire()
+   
+        print("\nMoku:Lab Phasemeter live phase difference (Ctrl+C to stop)")
+        print("Target: {}\n".format(MOKU_TARGET))
+        print("{:>10} {:>10} {:>12} {:>12} {:>12}".format("f1 [Hz]", "f2 [Hz]", "φ1 [deg]", "φ2 [deg]", "Δφ [deg]"))
+        print("-" * 62)
 
-    # Poll phases and compute difference ch2 - ch1
-    diffs_raw = []
-    for _ in range(READS):
-        time.sleep(SLEEP_S)
-        frame = pm.get_data()    # contains per-channel amplitude, frequency, phase
-        ph1 = frame['ch1']['phase']
-        ph2 = frame['ch2']['phase']
-        diffs_raw.append(ph2 - ph1)
+        while True:
+            # get_data returns latest amplitude, frequency, phase per channel
+            frame = i.get_data()  # {'ch1': {'frequency':..., 'amplitude':..., 'phase':...}, ...}
+            ch1 = frame['ch1']
+            ch2 = frame['ch2']
 
-    # Convert to degrees regardless of underlying units (cycles/radians/degrees)
-    diffs_deg = cycles_or_radians_to_deg(diffs_raw)
+            # Convert phases to degrees (see note above)
+            phi1_deg = ch1['phase'] * 360.0
+            phi2_deg = ch2['phase'] * 360.0
+            dphi_deg = wrap_deg_pm180(phi2_deg - phi1_deg)
 
-    print(f"Mean Δphase: {np.mean(diffs_deg):.4f}°")
-    print(f"Std  Δphase: {np.std(diffs_deg):.4f}°")
-    # Save a one-time calibration (expected near 0° for a perfect splitter/cables)
-    # calib_offset_deg = float(np.mean(diffs_deg))
-    # Report calibrated value as wrap_deg(measured - calib_offset_deg)
+            print("{:10.1f} {:10.1f} {:12.3f} {:12.3f} {:12.3f}".format(
+                ch1['frequency'], ch2['frequency'], phi1_deg, phi2_deg, dphi_deg
+            ))
 
-finally:
-    # Optional: turn off the output when done
-    pm.disable_output(1)
-    pm.relinquish_ownership()
+            time.sleep(POLL_SEC)
+
+    except KeyboardInterrupt:
+        print("\nStopped by user.")
+    finally:
+        # Always release the instrument when done
+        i.relinquish_ownership()
+
+if __name__ == "__main__":
+    main()
+

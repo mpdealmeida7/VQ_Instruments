@@ -6,13 +6,13 @@ from moku.instruments import Phasemeter
 
 # ========= USER SETTINGS =========
 HOST = 'localhost:8090'       # Replace with your device IP or USB IPv6+%zone (Windows) e.g., 'fe80::7269:79ff:feb7:d15a%41'
-TONE_HZ = 1e6          # Set to your AWG tone (Hz). Manual seed recommended; auto-acquire can be unreliable <~10 kHz.
-PLL_BW_HZ = '10kHz'            # PLL bandwidth (Hz). Increase if your phase/frequency drifts quickly; reduce for quieter readout.
-N_SAMPLES = 20               # Number of measurement frames to average for a stable result
-SAMPLE_DELAY_S = 0.1         # Time between reads (s)
+TONE_HZ = 100e3          # Set to your AWG tone (Hz). Manual seed recommended; auto-acquire can be unreliable <~10 kHz.
+PLL_BW_HZ = '1Hz'            # PLL bandwidth (Hz). Increase if your phase/frequency drifts quickly; reduce for quieter readout.
+N_SAMPLES = 20              # Number of measurement frames to average for a stable result
+SAMPLE_DELAY_S = 0.01         # Time between reads (s)
 # Front-end: pick ranges/impedance appropriate to your AWG output and cabling
 INPUT_IMPEDANCE = '50Ohm' # 'FiftyOhm' or 'OneMeg'
-COUPLING = 'DC'              # 'DC' or 'AC'
+COUPLING = 'AC'              # 'DC' or 'AC'
 RANGE_VPP = '10Vpp'              # Input range (Vpp). Choose smallest non-clipping range (e.g., 2 Vpp, 4 Vpp, etc.)
 
 # ========= CONNECT & CONFIGURE =========
@@ -26,6 +26,7 @@ try:
     # Enable both inputs
     pm.enable_input(channel=1, enable=True)
     pm.enable_input(channel=2, enable=True)
+    
 
     # Seed PLLs and lock
     pm.set_pm_loop(channel=1, frequency=TONE_HZ, bandwidth=PLL_BW_HZ)
