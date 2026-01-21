@@ -94,17 +94,17 @@ if __name__ == "__main__":
     dev = BCB4Controller("COM5", device_address=1, timeout=2.0)
 
     # Optional: change device address to 2
-    # print("Setting device address to 2:", dev.set_device_address(2))
+    #print("Setting device address to 2:", dev.set_device_address(2))
     
     #print firmware version
-    print("Firmware:", dev.read_firmware()) #print firmware version
+    #print("Firmware:", dev.read_firmware()) #print firmware version
 
     ##reset device
     #print("Resetting device:", dev.reset_device()) 
 
 
     #Set Bias mode Q+=1, Q-=2, MAX=3, Min=4
-    print("Setting bias mode to MIN (4):", dev.set_bias_mode(2))
+    print("Setting bias mode Q+=1, Q-=2, MAX=3, Min=4:", dev.set_bias_mode(1))
 
     #Sleep
     t=3*60 #3 minutes
@@ -114,10 +114,10 @@ if __name__ == "__main__":
     #Read and print Bias Voltage
     print("Bias Voltage:", dev.read_bias_voltage())
     
-    #Read Bisas Voltate
-    print("Bias Voltage:", dev.read_bias_voltage())
-
     #Set Bias Voltate to MAX
     #print("Bias Voltage MAX",dev.set_bias_voltage_MAX())
+    
+    #Read and print Bias MAX Voltage
+    #print("Bias MAX Voltage:", dev.read_bias_voltage())
 
     dev.close()

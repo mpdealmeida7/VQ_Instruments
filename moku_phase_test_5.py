@@ -3,8 +3,8 @@
 """
 Moku:Lab Phasemeter — Live Phase-Difference Plot (Δφ = φ2 - φ1)
 
-- Deploys/configures Phasemeter for two external 100 kHz tones (50 Ω, DC).
-- Locks PLLs around 100 kHz (1 kHz bandwidth).
+- Deploys/configures Phasemeter for two external tones (50 Ω, DC).
+- Locks PLLs around f=f1=f2 frequencies (1 kHz bandwidth).
 - Continuously computes Δφ and plots it live (wrapped to ±180°).
 - Prints a short console update once per second.
 - Stop with Ctrl+C.
@@ -30,8 +30,8 @@ from moku.instruments import Phasemeter
 
 # ---------- USER SETTINGS ----------
 MOKU_TARGET   = 'localhost:8090'   # e.g., "192.168.1.100"
-F_TONE_HZ     = 5e6           # known tone ~100 kHz
-PLL_BW        = "10kHz"              # '1Hz','10Hz','100Hz','1kHz','10kHz','100kHz' (Moku:Lab supports up to 100kHz)
+F_TONE_HZ     = 1e6           # known tone ~100 kHz
+PLL_BW        = "1kHz"              # '1Hz','10Hz','100Hz','1kHz','10kHz','100kHz' (Moku:Lab supports up to 100kHz)
 INPUT_RANGE   = "10Vpp"             # choose "1Vpp" if your AWG amplitude is small
 POLL_SEC      = 0.1                 # plot update interval
 PRINT_EVERY_S = 1.0                 # print a console line every N seconds
@@ -61,8 +61,8 @@ def main():
 
     try:
         # --- Configure front-ends: 50 Ω, DC coupling, set input range ---
-        i.set_frontend(channel=1, impedance="50Ohm", coupling="DC", range=INPUT_RANGE)
-        i.set_frontend(channel=2, impedance="50Ohm", coupling="DC", range=INPUT_RANGE)
+        i.set_frontend(channel=1, impedance="50Ohm", coupling="AC", range=INPUT_RANGE)
+        i.set_frontend(channel=2, impedance="50Ohm", coupling="AC", range=INPUT_RANGE)
 
         # --- Configure PLLs: known tone at 100 kHz, selected bandwidth ---
         i.set_pm_loop(channel=1, auto_acquire=False, frequency=F_TONE_HZ, bandwidth=PLL_BW)
@@ -109,7 +109,7 @@ def main():
             # Append to buffers
             t_now = time.time() - t0
             times.append(t_now)
-            dphis.append(dphi_deg)
+            dphis.append(dphi_deg-(-0.761))
 
             # Update plot window to last WINDOW_S seconds
             # (We always keep a fixed-length deque; x-limits reflect the last time span)
@@ -130,7 +130,7 @@ def main():
             # Console print at low rate
             if (time.time() - t_last_print) >= PRINT_EVERY_S:
                 print("{:9.1f} {:10.1f} {:10.1f} {:11.3f}".format(
-                    t_now, ch1["frequency"], ch2["frequency"], dphi_deg
+                    t_now, ch1["frequency"], ch2["frequency"], dphi_deg-(-0.761)
                 ))
                 t_last_print = time.time()
 

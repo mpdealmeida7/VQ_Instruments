@@ -1,23 +1,4 @@
-# from moku.instruments import Oscilloscope
 
-# ip_add='[fe80::7269:79ff:feb7:d15%41]'
-
-
-# osc = Oscilloscope('localhost:8090',force_connect=True)
-
-# data=osc.get_data()
-
-# print(data['ch1'], data['ch2'], data['time'])
-
-# osc.relinquish_ownership()
-
- #
-# moku example: Plotting Oscilloscope
-#
-# This example demonstrates how you can configure the Oscilloscope instrument,
-# and view triggered time-voltage data frames in real-time.
-#
-# (c) Liquid Instruments Pty. Ltd.
 #
 import matplotlib.pyplot as plt
 
