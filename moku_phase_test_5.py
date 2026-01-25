@@ -30,7 +30,7 @@ from moku.instruments import Phasemeter
 
 # ---------- USER SETTINGS ----------
 MOKU_TARGET   = 'localhost:8090'   # e.g., "192.168.1.100"
-F_TONE_HZ     = 1e6           # known tone ~100 kHz
+F_TONE_HZ     = 5e6           # known tone ~100 kHz
 PLL_BW        = "1kHz"              # '1Hz','10Hz','100Hz','1kHz','10kHz','100kHz' (Moku:Lab supports up to 100kHz)
 INPUT_RANGE   = "10Vpp"             # choose "1Vpp" if your AWG amplitude is small
 POLL_SEC      = 0.1                 # plot update interval
@@ -109,7 +109,7 @@ def main():
             # Append to buffers
             t_now = time.time() - t0
             times.append(t_now)
-            dphis.append(dphi_deg-(-0.761))
+            dphis.append(dphi_deg)
 
             # Update plot window to last WINDOW_S seconds
             # (We always keep a fixed-length deque; x-limits reflect the last time span)
@@ -130,7 +130,7 @@ def main():
             # Console print at low rate
             if (time.time() - t_last_print) >= PRINT_EVERY_S:
                 print("{:9.1f} {:10.1f} {:10.1f} {:11.3f}".format(
-                    t_now, ch1["frequency"], ch2["frequency"], dphi_deg-(-0.761)
+                    t_now, ch1["frequency"], ch2["frequency"], dphi_deg
                 ))
                 t_last_print = time.time()
 
