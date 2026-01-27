@@ -190,7 +190,7 @@ class PhasemeterClient:
         t0 = time.time()
         t_last_print = t0
         print("\nLive Δφ (Kernel→Interrupt to stop)")
-        print(f"{'t[s]':>9} {'f1[Hz]':>10} {'f2[Hz]':>10} {'Δφ[deg]':>11}")
+        print(f"\n{'t[s]':>9} {'f1[Hz]':>10} {'f2[Hz]':>10} {'Δφ[deg]':>11}")
         print("-" * 46)
 
         try:
@@ -213,7 +213,7 @@ class PhasemeterClient:
                 display(fig)
 
                 if (time.time() - t_last_print) >= print_every_s:
-                    print(f"{t_now:9.1f} {ch1['frequency']:10.1f} {ch2['frequency']:10.1f} {dphi_deg:11.3f}")
+                    print(f"\n{t_now:9.1f} {ch1['frequency']:10.1f} {ch2['frequency']:10.1f} {dphi_deg:11.3f}")
                     t_last_print = time.time()
 
                 time.sleep(self.poll_sec)

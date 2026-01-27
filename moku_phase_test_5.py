@@ -30,7 +30,7 @@ from moku.instruments import Phasemeter
 
 # ---------- USER SETTINGS ----------
 MOKU_TARGET   = '[fe80::7269:79ff:feb7:d15%6]'  # e.g., "192.168.1.100"
-F_TONE_HZ     = 21e6           # known tone ~100 kHz
+F_TONE_HZ     = 10e6           # known tone ~100 kHz
 PLL_BW        = "1kHz"              # '1Hz','10Hz','100Hz','1kHz','10kHz','100kHz' (Moku:Lab supports up to 100kHz)
 INPUT_RANGE   = "1Vpp"             # choose "1Vpp" if your AWG amplitude is small
 POLL_SEC      = 0.1                 # plot update interval
