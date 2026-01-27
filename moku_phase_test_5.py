@@ -29,10 +29,10 @@ import matplotlib.pyplot as plt
 from moku.instruments import Phasemeter
 
 # ---------- USER SETTINGS ----------
-MOKU_TARGET   = 'localhost:8090'   # e.g., "192.168.1.100"
-F_TONE_HZ     = 5e6           # known tone ~100 kHz
+MOKU_TARGET   = '[fe80::7269:79ff:feb7:d15%6]'  # e.g., "192.168.1.100"
+F_TONE_HZ     = 21e6           # known tone ~100 kHz
 PLL_BW        = "1kHz"              # '1Hz','10Hz','100Hz','1kHz','10kHz','100kHz' (Moku:Lab supports up to 100kHz)
-INPUT_RANGE   = "10Vpp"             # choose "1Vpp" if your AWG amplitude is small
+INPUT_RANGE   = "1Vpp"             # choose "1Vpp" if your AWG amplitude is small
 POLL_SEC      = 0.1                 # plot update interval
 PRINT_EVERY_S = 1.0                 # print a console line every N seconds
 WINDOW_S      = 60.0                # plot window length (seconds)
@@ -61,13 +61,15 @@ def main():
 
     try:
         # --- Configure front-ends: 50 Ω, DC coupling, set input range ---
-        i.set_frontend(channel=1, impedance="50Ohm", coupling="AC", range=INPUT_RANGE)
-        i.set_frontend(channel=2, impedance="50Ohm", coupling="AC", range=INPUT_RANGE)
+        i.set_frontend(channel=1, impedance="50Ohm", coupling="DC", range=INPUT_RANGE)
+        i.set_frontend(channel=2, impedance="50Ohm", coupling="DC", range=INPUT_RANGE)
 
         # --- Configure PLLs: known tone at 100 kHz, selected bandwidth ---
         i.set_pm_loop(channel=1, auto_acquire=False, frequency=F_TONE_HZ, bandwidth=PLL_BW)
         i.set_pm_loop(channel=2, auto_acquire=False, frequency=F_TONE_HZ, bandwidth=PLL_BW)
 
+        #i.set_phase_wrap(value='2pi')
+        
         # Reacquire to ensure fresh lock
         i.reacquire()
         

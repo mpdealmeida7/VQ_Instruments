@@ -7,7 +7,9 @@ from moku.instruments import Oscilloscope
 # Connect to your Moku by its ip address using Oscilloscope('192.168.###.###')
 # force_connect will overtake an existing connection
 
-ip_ID='localhost:8090'
+#ip_ID='localhost:8090'
+
+ip_ID='[fe80::7269:79ff:feb7:d15%6]'
 
 i = Oscilloscope(ip_ID, force_connect=True)
 
@@ -19,7 +21,7 @@ try:
     i.set_timebase(-5e-6, 5e-6)
 
     # Generate an output sine wave on Channel 1, 1Vpp, 1MHz, 0V offset
-    i.generate_waveform(1, 'Sine', amplitude=1, frequency=1e6)
+    i.generate_waveform(1, 'Sine', amplitude=1, frequency=8e6)
 
     # Set the data source of Channel 1 to be Input 1
     i.set_source(1, 'Input1')
