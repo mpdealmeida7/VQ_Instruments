@@ -250,8 +250,7 @@ class PhasemeterClient:
 
         t0 = time.time()
         t_last_print = t0
-        print("
-Live Δφ (Ctrl+C or Kernel Interrupt to stop)")
+        print("Live Δφ (Ctrl+C or Kernel Interrupt to stop)")
         print(f"Target: {self.target} | BW: {self.pll_bandwidth} | mode={mode}")
         print(f"{'t[s]':>9} {'f1[Hz]':>10} {'f2[Hz]':>10} {'Δφ[deg]':>11}")
         print("-" * 46)
@@ -286,8 +285,7 @@ Live Δφ (Ctrl+C or Kernel Interrupt to stop)")
 
                 time.sleep(self.poll_sec)
         except KeyboardInterrupt:
-            print("
-Stopped by user.")
+            print("topped by user.")
         finally:
             try:
                 plt.ioff(); plt.show()
@@ -316,8 +314,7 @@ Stopped by user.")
 
         t0 = time.time()
         t_last_print = t0
-        print("
-Live Δφ (Kernel→Interrupt to stop)")
+        print("Live Δφ (Kernel→Interrupt to stop)")
         print(f"Target: {self.target} | BW: {self.pll_bandwidth} | mode={mode}")
         print(f"{'t[s]':>9} {'f1[Hz]':>10} {'f2[Hz]':>10} {'Δφ[deg]':>11}")
         print("-" * 46)
@@ -348,8 +345,7 @@ Live Δφ (Kernel→Interrupt to stop)")
 
                 time.sleep(self.poll_sec)
         except KeyboardInterrupt:
-            print("
-Stopped by user.")
+            print("Stopped by user.")
         finally:
             plt.close(fig)
 
@@ -573,11 +569,9 @@ Stopped by user.")
 
         with open(filename, mode=mode, newline='', encoding='utf-8') as f:
             if metadata is not None and file_empty:
-                f.write(f"# saved_utc={datetime.utcnow().isoformat()}Z
-")
+                f.write(f"# saved_utc={datetime.utcnow().isoformat()}Z\n")
                 for k, v in metadata.items():
-                    f.write(f"# {k}={v}
-")
+                    f.write(f"# {k}={v}\n")
 
             writer = csv.DictWriter(f, fieldnames=keys)
             if include_header and file_empty:
