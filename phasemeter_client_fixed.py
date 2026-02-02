@@ -25,6 +25,10 @@ import matplotlib.pyplot as plt
  
 from IPython.display import display, clear_output
 
+import csv
+import os
+from datetime import datetime
+
 
 try:
     from moku.instruments import Phasemeter  # type: ignore
@@ -222,59 +226,6 @@ class PhasemeterClient:
         finally:
          plt.close(fig)
     
-    
-
-
-    # def live_plot_delta_phi_vs_time(self, *, window_s: float = 60.0, print_every_s: float = 1.0) -> None:
-    #     if self._inst is None:
-    #         raise RuntimeError('Device not loaded. Call load() first.')
-    #     plt.ion()
-    #     fig, ax = plt.subplots(figsize=(8, 4.5))
-    #     line, = ax.plot([], [], lw=1.6, color="#1f77b4")
-    #     ax.set_title("Live Phase Difference Δφ = φ₂ − φ₁")
-    #     ax.set_xlabel("Elapsed time [s]")
-    #     ax.set_ylabel("Δφ [deg]")
-    #     ax.grid(True, alpha=0.3)
-    #     nmax = max(10, int(window_s / max(self.poll_sec, 1e-3)) + 5)
-    #     times, dphis = deque(maxlen=nmax), deque(maxlen=nmax)
-
-    #     t0 = time.time()
-    #     t_last_print = t0
-    #     print("\nLive Δφ (Ctrl+C to stop)")
-    #     print(f"Target: {self.target} | BW: {self.pll_bandwidth}")
-    #     print(f"{'t[s]':>9} {'f1[Hz]':>10} {'f2[Hz]':>10} {'Δφ[deg]':>11}")
-    #     print("-" * 46)
-    #     try:
-    #         while True:
-    #             dphi_deg, frame = self.read_phase_difference_deg()
-    #             ch1, ch2 = frame['ch1'], frame['ch2']
-    #             t_now = time.time() - t0
-    #             times.append(t_now)
-    #             dphis.append(dphi_deg)
-
-    #             if len(times) > 1:
-    #                 t_min = max(0.0, times[-1] - window_s)
-    #                 ax.set_xlim(t_min, times[-1])
-    #                 y_min, y_max = min(dphis), max(dphis)
-    #                 pad = max(5.0, 0.1 * (y_max - y_min if y_max > y_min else 1.0))
-    #                 ax.set_ylim(y_min - pad, y_max + pad)
-    #             line.set_data(times, dphis)
-    #             fig.canvas.draw_idle()
-    #             plt.pause(0.001)
-
-    #             if (time.time() - t_last_print) >= print_every_s:
-    #                 print(f"{t_now:9.1f} {ch1['frequency']:10.1f} {ch2['frequency']:10.1f} {dphi_deg:11.3f}")
-    #                 t_last_print = time.time()
-
-    #             time.sleep(self.poll_sec)
-    #     except KeyboardInterrupt:
-    #         print("\nStopped by user.")
-    #     finally:
-    #         try:
-    #             plt.ioff(); plt.show()
-    #         except Exception:
-    #             pass
-
     def sweep_phase_vs_frequency(
         self,
         freqs_hz: Iterable[float],
@@ -320,5 +271,60 @@ class PhasemeterClient:
         plt.ylabel('Δφ [deg]')
         plt.tight_layout()
         plt.show()
+    
+    def save_sweep_to_csv(
+        self,
+        sweep_data: List[Tuple[float, float]],
+        filename: str,
+        *,
+        include_header: bool = True,
+        extra_metadata: Optional[dict] = None
+        ) -> str:
+        
+        """
+            Save sweep data [(f_hz, dphi_deg), ...] to a CSV file.
+
+            Parameters
+            ----------
+            sweep_data : list of (float, float)
+                Output from sweep_phase_vs_frequency(): (frequency_hz, delta_phi_deg)
+            filename : str
+                Path to CSV file.
+            include_header : bool
+                Write header row if file is new/empty.
+            extra_metadata : dict | None
+                Optional metadata written as commented lines at top (prefixed with '# ').
+
+            Returns
+            -------
+            str
+                Absolute path to the saved file.
+        """
+        
+        if not sweep_data:
+            raise ValueError("sweep_data is empty; nothing to save.")
+        
+        
+        file_exists = os.path.exists(filename)
+        file_empty = (not file_exists) or (os.path.getsize(filename) == 0)
+        
+        with open(filename, mode="a", newline="", encoding="utf-8") as f:
+            # Optional metadata block (only when creating a new file)
+            if (extra_metadata is not None) and file_empty:
+                f.write(f"# saved_utc={datetime.utcnow().isoformat()}Z\n")
+                for k, v in extra_metadata.items():
+                    f.write(f"# {k}={v}\n")
+                    
+            writer = csv.writer(f)
+            
+            if include_header and file_empty:
+                writer.writerow(["frequency_hz", "delta_phi_deg"])
+                
+            
+            for freq_hz, dphi_deg in sweep_data:
+                writer.writerow([float(freq_hz), float(dphi_deg)])
+
+        return os.path.abspath(filename)
+
 
 __all__ = ['PhasemeterClient']
