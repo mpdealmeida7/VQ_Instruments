@@ -4,6 +4,7 @@ import time
 from typing import Optional, Iterable
 
 
+
 class BCB4Controller:
     """
     Controller for BCB-4 device over a serial port.

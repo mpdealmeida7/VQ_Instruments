@@ -2,9 +2,8 @@ import pyvisa
 
 import time
 
-rm = pyvisa.ResourceManager()
-  # or ResourceManager('@py') to force the pure Python backend
-# print(rm.list_resources())
+rm = pyvisa.ResourceManager()  # or ResourceManager('@py') to force the pure Python backend
+#print(rm.list_resources())
 
 # usb_resources = rm.list_resources("USB?*INSTR")
 # print(usb_resources)
