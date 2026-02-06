@@ -68,9 +68,9 @@ if __name__ == "__main__":
 
     laser.laser_ON()
     
-    laser.change_WL('1560000')
+    laser.change_WL('1600')
     
     time.sleep(5.0)
     
-    laser.laser_OFF()
+    #laser.laser_OFF()
 

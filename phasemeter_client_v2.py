@@ -46,7 +46,7 @@ class PhasemeterClient:
         impedance: str = '50Ohm',
         coupling: str = 'DC',
         pll_bandwidth: str = '1kHz',
-        poll_sec: float = 0.1,
+        poll_sec: float = 0.5,
     ) -> None:
         self.target = target
         self.phase_units = phase_units
