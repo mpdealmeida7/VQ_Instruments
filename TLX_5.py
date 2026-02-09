@@ -11,8 +11,12 @@ class TRL_5:
 
         self.laser_on = "LASer:ON: 1"
         self.laser_off = "LASer:ON: 0"
-        self.laser_WL = "LASer:WAVElength: "
+        self.laser_WL = None
         self.laser_power = "LASer:POWer?"
+        self.laser_current_WL= "LASer:WAVElength?"
+        
+
+
     
     #-------------------------------------------------------------
     def connect(self, port: str, baudrate: int = 115200, timeout: float = 1.0):
@@ -50,15 +54,21 @@ class TRL_5:
     #---------------------------------------------------------------------------
     def change_WL(self,wl):
         wl=wl*1000
-        wls=str(wl)
-        wavelength=self.laser_WL+wl
-        self.send_command(wavelength)
+        WL="LASer:WAVElength:"+str(wl)
+        return self.send_command(WL)
+        #self.send_command(wavelength)
     #---------------------------------------------------------------------------
+    def laser_current_wavelength(self):
+        current_wavelength=self.send_command(self.laser_current_WL)
+        print(f'Laser Wavelength={current_wavelength} nm')
+    #---------------------------------------------------------------------------
+    def power(self):
+        power = self.send_command(self.laser_power)
+        print(f'Power={float(power)/1000} dBm')
     #---------------------------------------------------------------------------
     def laser_OFF(self):
         return self.send_command(self.laser_off)
-
-
+    
 # -------------------------------------------------------------------------
 if __name__ == "__main__":
     laser = TRL_5()
@@ -67,10 +77,14 @@ if __name__ == "__main__":
     laser.connect(port)
 
     laser.laser_ON()
+
+    laser.change_WL('1570000')
     
-    laser.change_WL('1600')
+    laser.laser_current_wavelength()
+    
+    laser.power()
     
     time.sleep(5.0)
     
-    #laser.laser_OFF()
+    laser.laser_OFF()
 
