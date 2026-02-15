@@ -60,7 +60,7 @@ class TRL_5:
     #---------------------------------------------------------------------------
     def laser_current_wavelength(self):
         current_wavelength=self.send_command(self.laser_current_WL)
-        print(f'Laser Wavelength={current_wavelength} nm')
+        print(f'Laser Wavelength={int(current_wavelength)/1000} nm')
     #---------------------------------------------------------------------------
     def power(self):
         power = self.send_command(self.laser_power)
