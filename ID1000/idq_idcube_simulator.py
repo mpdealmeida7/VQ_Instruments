@@ -122,7 +122,7 @@ class DG922Controller:
         self.write(f":SOUR{ch}:VOLT:LOW {low_v}")
         self.write(f":SOUR{ch}:VOLT:HIGH {high_v}")
         self.write(f":SOUR{ch}:PULS:TRAN:LEAD {rise_s}")
-        self.write(f":SOUR{ch}:PULS:TRAN:TRA {fall_s}")
+        self.write(f":SOUR{ch}:PULS:TRAN:TRAI {fall_s}")
         self.opc()
 
     def set_phase_deg(self, ch: int, phase_deg: float) -> None:
@@ -140,8 +140,7 @@ class DG922Controller:
         self.output_off(1)
         self.output_off(2)
         self.reset()
-        self.output_off(1)
-        self.output_off(2)
+        
 
 
 def parse_args() -> argparse.Namespace:
@@ -150,16 +149,19 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--resource", default=DEFAULT_RESOURCE, help="PyVISA resource string")
 
-    parser.add_argument("--rate", type=float, default=100_000.0, help="Pulse repetition rate (Hz)")
-    parser.add_argument("--pulse-width", type=float, default=20e-9, help="Pulse width (seconds)")
-    parser.add_argument("--delay", type=float, default=50e-9, help="CH2 delay relative to CH1 (seconds)")
+    parser.add_argument("--rate", type=float, default=5e6, help="Pulse repetition rate (Hz)")
+    parser.add_argument("--pulse-width", type=float, default=9e-9, help="Pulse width (seconds)")
+    parser.add_argument("--delay", type=float, default=10e-9, help="CH2 delay relative to CH1 (seconds)")
 
     parser.add_argument("--ttl-low", type=float, default=0.0, help="TTL low level (V)")
-    parser.add_argument("--ttl-high", type=float, default=3.3, help="TTL high level (V)")
+    parser.add_argument("--ttl-high", type=float, default=5.0, help="TTL high level (V)")
     parser.add_argument("--rise", type=float, default=4e-9, help="Edge rise time (seconds)")
     parser.add_argument("--fall", type=float, default=4e-9, help="Edge fall time (seconds)")
 
-    parser.add_argument("--load", default="50", choices=["50", "INF", "inf"], help="Output load: 50 or INF")
+    # Make load parsing case-insensitive and consistent with later .upper() usage
+    parser.add_argument("--load", type=str.upper, default="50", choices=["50", "INF"],
+                        help="Output load: 50 or INF")
+
     parser.add_argument(
         "--reset-on-exit",
         action=argparse.BooleanOptionalAction,
@@ -167,7 +169,6 @@ def parse_args() -> argparse.Namespace:
         help="Reset and release AWG local control when stopping (default: enabled)",
     )
     return parser.parse_args()
-
 
 def keyboard_stop_watcher(stop_event: threading.Event) -> None:
     """Allow stop via keyboard entry ('q' + Enter)."""
@@ -227,11 +228,14 @@ def main() -> None:
             fall_s=args.fall,
         )
 
-        awg.sync_phase()
+       
         awg.set_phase_deg(2, ch2_phase_deg)
-
+    
         awg.output_on(1)
         awg.output_on(2)
+        
+        awg.sync_phase()
+
 
         print("\nTTL pulse simulation running on CH1 + CH2")
         print(f"Rate: {args.rate:.2f} Hz")
@@ -253,6 +257,16 @@ def main() -> None:
         try:
             awg.output_off(1)
             awg.output_off(2)
+            
+            
+        # Optional: force offset to 0 V at shutdown as a safety habit
+            try:
+                awg.set_dc_offset(1, 0.0)
+                awg.set_dc_offset(2, 0.0)
+            except Exception:
+                pass
+
+            
             if args.reset_on_exit:
                 awg.reset()
                 awg.output_off(1)

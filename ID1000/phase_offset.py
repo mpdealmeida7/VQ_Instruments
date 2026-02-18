@@ -39,8 +39,8 @@ def calculate_relative_generator_phase(frequency_hz, visual_delay_ns,
     }
 
 # --- CONFIGURATION ---
-FREQ = 10e6           # 5 MHz
-WANT_DELAY = 10.0    # Want to see 40ns gap on the scope
+FREQ = 5e6           # Frequency
+WANT_DELAY = 10.0    #Delay
 
 res = calculate_relative_generator_phase(FREQ, WANT_DELAY, len1_m=3.0, len2_m=3.0)
 
