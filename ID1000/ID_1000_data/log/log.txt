@@ -1,0 +1,88 @@
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters.csv every 1 seconds for 10 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters.csv every 1 seconds for 10 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters.csv every 3 seconds for 10 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\rC:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters.csv every 1.0 seconds for 60.0 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\rC:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters.csv every 1.0 seconds for 60.0 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters.csv every 1.0 seconds for 60.0 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters.csv every 1.0 seconds for 60.0 seconds...
+
+INFO: connection to DLT successful
+INFO: Starting window scan over 50 value(s); integration=2000 ns; samples/window=3
+INFO: Configuring window=200.0 ps, integration=2000 ns
+INFO: Configuring window=400.0 ps, integration=2000 ns
+INFO: Configuring window=600.0 ps, integration=2000 ns
+INFO: Configuring window=800.0 ps, integration=2000 ns
+INFO: Configuring window=1000.0 ps, integration=2000 ns
+INFO: Configuring window=1200.0 ps, integration=2000 ns
+INFO: Configuring window=1400.0 ps, integration=2000 ns
+INFO: Configuring window=1600.0 ps, integration=2000 ns
+INFO: Configuring window=1800.0 ps, integration=2000 ns
+INFO: Configuring window=2000.0 ps, integration=2000 ns
+INFO: Configuring window=2200.0 ps, integration=2000 ns
+INFO: Configuring window=2400.0 ps, integration=2000 ns
+INFO: Configuring window=2600.0 ps, integration=2000 ns
+INFO: Configuring window=2800.0 ps, integration=2000 ns
+INFO: Configuring window=3000.0 ps, integration=2000 ns
+INFO: Configuring window=3200.0 ps, integration=2000 ns
+INFO: Configuring window=3400.0 ps, integration=2000 ns
+INFO: Configuring window=3600.0 ps, integration=2000 ns
+INFO: Configuring window=3800.0 ps, integration=2000 ns
+INFO: Configuring window=4000.0 ps, integration=2000 ns
+INFO: Configuring window=4200.0 ps, integration=2000 ns
+INFO: Configuring window=4400.0 ps, integration=2000 ns
+INFO: Configuring window=4600.0 ps, integration=2000 ns
+INFO: Configuring window=4800.0 ps, integration=2000 ns
+INFO: Configuring window=5000.0 ps, integration=2000 ns
+INFO: Configuring window=5200.0 ps, integration=2000 ns
+INFO: Configuring window=5400.0 ps, integration=2000 ns
+INFO: Configuring window=5600.0 ps, integration=2000 ns
+INFO: Configuring window=5800.0 ps, integration=2000 ns
+INFO: Configuring window=6000.0 ps, integration=2000 ns
+INFO: Configuring window=6200.0 ps, integration=2000 ns
+INFO: Configuring window=6400.0 ps, integration=2000 ns
+INFO: Configuring window=6600.0 ps, integration=2000 ns
+INFO: Configuring window=6800.0 ps, integration=2000 ns
+INFO: Configuring window=7000.0 ps, integration=2000 ns
+INFO: Configuring window=7200.0 ps, integration=2000 ns
+INFO: Configuring window=7400.0 ps, integration=2000 ns
+INFO: Configuring window=7600.0 ps, integration=2000 ns
+INFO: Configuring window=7800.0 ps, integration=2000 ns
+INFO: Configuring window=8000.0 ps, integration=2000 ns
+INFO: Configuring window=8200.0 ps, integration=2000 ns
+INFO: Configuring window=8400.0 ps, integration=2000 ns
+INFO: Configuring window=8600.0 ps, integration=2000 ns
+INFO: Configuring window=8800.0 ps, integration=2000 ns
+INFO: Configuring window=9000.0 ps, integration=2000 ns
+INFO: Configuring window=9200.0 ps, integration=2000 ns
+INFO: Configuring window=9400.0 ps, integration=2000 ns
+INFO: Configuring window=9600.0 ps, integration=2000 ns
+INFO: Configuring window=9800.0 ps, integration=2000 ns
+INFO: Configuring window=10000.0 ps, integration=2000 ns
+INFO: Saved scan summary: C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\scan_summary_200-10000ps.csv
+INFO: Saved plot: C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\scan_plots\window_scan_counts.png
+INFO: Saved plot: C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\scan_plots\window_scan_rate.png
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters.csv every 1.0 seconds for 60.0 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters.csv every 3 seconds for 10 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\counters_output.csv every 3.0 seconds for 60.0 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters.csv every 3 seconds for 10 seconds...
+

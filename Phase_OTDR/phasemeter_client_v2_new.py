@@ -539,8 +539,9 @@ class PhasemeterClient:
         plt.plot(freqs, y, marker, lw=1.5)
         plt.grid(True, alpha=0.3)
         plt.title(title)
-        plt.xlabel('Frequency [Hz]')
-        plt.ylabel(f'{y_key} [deg]')
+        plt.xlabel(f'Frequency [MHz]')
+        #plt.ylabel(f'{y_key} [deg]')
+        plt.ylabel(f'Phase Diff. D1-D2 [deg]')
         plt.tight_layout()
         plt.show()
 

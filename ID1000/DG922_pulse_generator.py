@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Simulate IDQ IDCube-like TTL pulses on Rigol DG922 Pro (CH1 + delayed CH2).
+Generates TTL-like pulses on Rigol DG922 Pro (CH1 + delayed CH2).
 
 Robust fixes included:
   1) Force DC offset (front-panel "Vdc"/Offset) to 0 V on both channels.
@@ -361,13 +361,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--resource", default=DEFAULT_RESOURCE, help="PyVISA resource string")
 
     parser.add_argument("--rate", type=float, default=15e6, help="Pulse repetition rate (Hz)")
-    parser.add_argument("--pulse-width", type=float, default=9e-9, help="Pulse width (seconds)")
-    parser.add_argument("--delay", type=float, default=10e-9, help="CH2 delay relative to CH1 (seconds)")
+    parser.add_argument("--pulse-width", type=float, default=10e-9, help="Pulse width (seconds)")
+    parser.add_argument("--delay", type=float, default=30e-9, help="CH2 delay relative to CH1 (seconds)")
 
     parser.add_argument("--ttl-low", type=float, default=0.0, help="TTL low level (V)")
     parser.add_argument("--ttl-high", type=float, default=5.0, help="TTL high level (V)")
-    parser.add_argument("--rise", type=float, default=4e-9, help="Edge rise time (seconds)")
-    parser.add_argument("--fall", type=float, default=4e-9, help="Edge fall time (seconds)")
+    parser.add_argument("--rise", type=float, default=3e-9, help="Edge rise time (seconds)")
+    parser.add_argument("--fall", type=float, default=3e-9, help="Edge fall time (seconds)")
 
     parser.add_argument("--load", type=str.upper, default="50", choices=["50", "INF"],
                         help="Output load: 50 or INF")
@@ -464,10 +464,10 @@ def main() -> None:
 
 
 
-        awg.output_on(1)
-        awg.output_on(2)
+        #awg.output_on(1)
+        #awg.output_on(2)
         
-        awg.sync_phase()
+        #awg.sync_phase()
         
         delay_info = awg.apply_time_delay_via_phase(
             delay_s=args.delay,
@@ -476,10 +476,10 @@ def main() -> None:
             do_sync=True,
         )
 
-        # awg.output_on(1)
-        # awg.output_on(2)
+        awg.output_on(1)
+        awg.output_on(2)
         
-        # awg.sync_phase()
+        awg.sync_phase()
 
         # Readbacks for visibility
         width_rb_ch1 = awg.get_pulse_width_s(1)
