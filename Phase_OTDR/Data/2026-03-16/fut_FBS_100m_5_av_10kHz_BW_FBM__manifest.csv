@@ -1,0 +1,4 @@
+run,started_at_local,filename
+calibration,2026-03-16T14:35:30+10:00,fut_FBS_100m_5_av_10kHz_BW_FBM__start-20260316_143530__calibration.csv
+01,2026-03-16T14:43:36+10:00,fut_FBS_100m_5_av_10kHz_BW_FBM__start-20260316_144336__run-01.csv
+02,2026-03-16T14:51:27+10:00,fut_FBS_100m_5_av_10kHz_BW_FBM__start-20260316_145127__run-02.csv

@@ -86,3 +86,6 @@ INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instrument
 INFO: connection to DLT successful
 INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters.csv every 3 seconds for 10 seconds...
 
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters.csv every 3 seconds for 10 seconds...
+

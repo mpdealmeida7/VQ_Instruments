@@ -1,0 +1,1521 @@
+INFO: connection to DLT successful
+DEBUG: [command] DEVI:CONFI:LOAD COUNT
+COUNTercoincidence configuration loaded
+DEBUG: [command] DELA2:VALU?
+30000TB
+DEBUG: [command] DELA6:VALU 35000
+Value set to 35000
+DEBUG: [command] DELA3:VALU?
+0TB
+DEBUG: [command] DELA7:VALU 10000
+Value set to 10000
+DEBUG: [command] DELA4:VALU?
+0TB
+DEBUG: [command] DELA8:VALU 15000
+Value set to 15000
+DEBUG: [command] STARt:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] INPU1:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] INPU2:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] INPU3:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] INPU4:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO6:WIND:BEGI:DELA 2500
+Value set to 2500
+DEBUG: [command] TSCO6:WIND:END:DELA 7500
+Value set to 7500
+DEBUG: [command] TSCO6:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO7:WIND:BEGI:DELA 7500
+Value set to 7500
+DEBUG: [command] TSCO7:WIND:END:DELA 12500
+Value set to 12500
+DEBUG: [command] TSCO7:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO8:WIND:BEGI:DELA 12500
+Value set to 12500
+DEBUG: [command] TSCO8:WIND:END:DELA 17500
+Value set to 17500
+DEBUG: [command] TSCO8:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO3:WIND:BEGI:DELA 7500
+Value set to 7500
+DEBUG: [command] TSCO3:WIND:END:DELA 12500
+Value set to 12500
+DEBUG: [command] TSCO3:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO4:WIND:BEGI:DELA 12500
+Value set to 12500
+DEBUG: [command] TSCO4:WIND:END:DELA 17500
+Value set to 17500
+DEBUG: [command] TSCO4:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO5:WIND:BEGI:DELA 12500
+Value set to 12500
+DEBUG: [command] TSCO5:WIND:END:DELA 17500
+Value set to 17500
+DEBUG: [command] TSCO5:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO13:WIND:BEGI:DELA 0
+Value set to 0
+DEBUG: [command] TSCO13:WIND:END:DELA 10000
+Value set to 10000
+DEBUG: [command] TSCO13:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO14:WIND:BEGI:DELA 5000
+Value set to 5000
+DEBUG: [command] TSCO14:WIND:END:DELA 15000
+Value set to 15000
+DEBUG: [command] TSCO14:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO15:WIND:BEGI:DELA 0
+Value set to 0
+DEBUG: [command] TSCO15:WIND:END:DELA 10000
+Value set to 10000
+DEBUG: [command] TSCO15:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO16:WIND:BEGI:DELA 0
+Value set to 0
+DEBUG: [command] TSCO16:WIND:END:DELA 10000
+Value set to 10000
+DEBUG: [command] TSCO16:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO24:WIND:BEGI:DELA 5000
+Value set to 5000
+DEBUG: [command] TSCO24:WIND:END:DELA 15000
+Value set to 15000
+DEBUG: [command] TSCO24:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_output.csv every 2.0 seconds for 20.0 seconds...
+
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992450
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992449
+14992449
+0
+0
+14992449
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992450
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992450
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992449
+14992450
+0
+0
+14992449
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992450
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992449
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992450
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992450
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992449
+14992450
+0
+0
+14992449
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+INFO: connection to DLT successful
+DEBUG: [command] DEVI:CONFI:LOAD COUNT
+COUNTercoincidence configuration loaded
+DEBUG: [command] DELA2:VALU?
+30000TB
+DEBUG: [command] DELA6:VALU 35000
+Value set to 35000
+DEBUG: [command] DELA3:VALU?
+0TB
+DEBUG: [command] DELA7:VALU 10000
+Value set to 10000
+DEBUG: [command] DELA4:VALU?
+0TB
+DEBUG: [command] DELA8:VALU 15000
+Value set to 15000
+DEBUG: [command] STARt:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] INPU1:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] INPU2:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] INPU3:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] INPU4:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO6:WIND:BEGI:DELA 2500
+Value set to 2500
+DEBUG: [command] TSCO6:WIND:END:DELA 7500
+Value set to 7500
+DEBUG: [command] TSCO6:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO7:WIND:BEGI:DELA 7500
+Value set to 7500
+DEBUG: [command] TSCO7:WIND:END:DELA 12500
+Value set to 12500
+DEBUG: [command] TSCO7:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO8:WIND:BEGI:DELA 12500
+Value set to 12500
+DEBUG: [command] TSCO8:WIND:END:DELA 17500
+Value set to 17500
+DEBUG: [command] TSCO8:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO3:WIND:BEGI:DELA 7500
+Value set to 7500
+DEBUG: [command] TSCO3:WIND:END:DELA 12500
+Value set to 12500
+DEBUG: [command] TSCO3:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO4:WIND:BEGI:DELA 12500
+Value set to 12500
+DEBUG: [command] TSCO4:WIND:END:DELA 17500
+Value set to 17500
+DEBUG: [command] TSCO4:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO5:WIND:BEGI:DELA 12500
+Value set to 12500
+DEBUG: [command] TSCO5:WIND:END:DELA 17500
+Value set to 17500
+DEBUG: [command] TSCO5:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO13:WIND:BEGI:DELA 0
+Value set to 0
+DEBUG: [command] TSCO13:WIND:END:DELA 10000
+Value set to 10000
+DEBUG: [command] TSCO13:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO14:WIND:BEGI:DELA 5000
+Value set to 5000
+DEBUG: [command] TSCO14:WIND:END:DELA 15000
+Value set to 15000
+DEBUG: [command] TSCO14:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO15:WIND:BEGI:DELA 0
+Value set to 0
+DEBUG: [command] TSCO15:WIND:END:DELA 10000
+Value set to 10000
+DEBUG: [command] TSCO15:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO16:WIND:BEGI:DELA 0
+Value set to 0
+DEBUG: [command] TSCO16:WIND:END:DELA 10000
+Value set to 10000
+DEBUG: [command] TSCO16:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO24:WIND:BEGI:DELA 5000
+Value set to 5000
+DEBUG: [command] TSCO24:WIND:END:DELA 15000
+Value set to 15000
+DEBUG: [command] TSCO24:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\histcounters_output.csv every 2.0 seconds for 20.0 seconds...
+
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992450
+0
+0
+14992449
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992449
+14992450
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992449
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992450
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992449
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992450
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992449
+0
+0
+14992449
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992449
+14992450
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992449
+0
+0
+14992449
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992450
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+INFO: connection to DLT successful
+DEBUG: [command] DEVI:CONFI:LOAD COUNT
+COUNTercoincidence configuration loaded
+DEBUG: [command] DELA2:VALU?
+30000TB
+DEBUG: [command] DELA6:VALU 35000
+Value set to 35000
+DEBUG: [command] DELA3:VALU?
+0TB
+DEBUG: [command] DELA7:VALU 10000
+Value set to 10000
+DEBUG: [command] DELA4:VALU?
+0TB
+DEBUG: [command] DELA8:VALU 15000
+Value set to 15000
+DEBUG: [command] STARt:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] INPU1:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] INPU2:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] INPU3:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] INPU4:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO6:WIND:BEGI:DELA 2500
+Value set to 2500
+DEBUG: [command] TSCO6:WIND:END:DELA 7500
+Value set to 7500
+DEBUG: [command] TSCO6:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO7:WIND:BEGI:DELA 7500
+Value set to 7500
+DEBUG: [command] TSCO7:WIND:END:DELA 12500
+Value set to 12500
+DEBUG: [command] TSCO7:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO8:WIND:BEGI:DELA 12500
+Value set to 12500
+DEBUG: [command] TSCO8:WIND:END:DELA 17500
+Value set to 17500
+DEBUG: [command] TSCO8:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO3:WIND:BEGI:DELA 7500
+Value set to 7500
+DEBUG: [command] TSCO3:WIND:END:DELA 12500
+Value set to 12500
+DEBUG: [command] TSCO3:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO4:WIND:BEGI:DELA 12500
+Value set to 12500
+DEBUG: [command] TSCO4:WIND:END:DELA 17500
+Value set to 17500
+DEBUG: [command] TSCO4:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO5:WIND:BEGI:DELA 12500
+Value set to 12500
+DEBUG: [command] TSCO5:WIND:END:DELA 17500
+Value set to 17500
+DEBUG: [command] TSCO5:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO13:WIND:BEGI:DELA 0
+Value set to 0
+DEBUG: [command] TSCO13:WIND:END:DELA 10000
+Value set to 10000
+DEBUG: [command] TSCO13:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO14:WIND:BEGI:DELA 5000
+Value set to 5000
+DEBUG: [command] TSCO14:WIND:END:DELA 15000
+Value set to 15000
+DEBUG: [command] TSCO14:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO15:WIND:BEGI:DELA 0
+Value set to 0
+DEBUG: [command] TSCO15:WIND:END:DELA 10000
+Value set to 10000
+DEBUG: [command] TSCO15:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO16:WIND:BEGI:DELA 0
+Value set to 0
+DEBUG: [command] TSCO16:WIND:END:DELA 10000
+Value set to 10000
+DEBUG: [command] TSCO16:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO24:WIND:BEGI:DELA 5000
+Value set to 5000
+DEBUG: [command] TSCO24:WIND:END:DELA 15000
+Value set to 15000
+DEBUG: [command] TSCO24:COUN:MODE CYCL;INTE 1000;RESEt
+Command not enabled
+Value set to 1000
+Counter value set to 0 
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\histcounters_output.csv every 1.0 seconds for 20.0 seconds...
+
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992450
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992449
+14992450
+0
+0
+14992449
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992449
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992450
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992449
+14992450
+0
+0
+14992449
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992449
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992450
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992449
+14992450
+0
+0
+14992449
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992449
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992450
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992449
+14992450
+0
+0
+14992449
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992449
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992450
+0
+0
+14992449
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992449
+14992450
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992449
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992449
+14992450
+0
+0
+14992449
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992449
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992450
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992449
+14992450
+0
+0
+14992449
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+14992450
+14992449
+0
+0
+14992450
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+INFO: connection to DLT successful
+DEBUG: [command] DEVI:CONFI:LOAD COUNT
+COUNTercoincidence configuration loaded
+DEBUG: [command] DELA2:VALU?
+30000TB
+DEBUG: [command] DELA6:VALU 35000
+Value set to 35000
+DEBUG: [command] DELA3:VALU?
+0TB
+DEBUG: [command] DELA7:VALU 10000
+Value set to 10000
+DEBUG: [command] DELA4:VALU?
+0TB
+DEBUG: [command] DELA8:VALU 15000
+Value set to 15000
+DEBUG: [command] STARt:COUN:MODE CYCL;INTE 10000;RESEt
+Value set to CYCLe
+Value set to 10000
+Counter value set to 0 
+DEBUG: [command] INPU1:COUN:MODE CYCL;INTE 10000;RESEt
+Value set to CYCLe
+Value set to 10000
+Counter value set to 0 
+DEBUG: [command] INPU2:COUN:MODE CYCL;INTE 10000;RESEt
+Value set to CYCLe
+Value set to 10000
+Counter value set to 0 
+DEBUG: [command] INPU3:COUN:MODE CYCL;INTE 10000;RESEt
+Value set to CYCLe
+Value set to 10000
+Counter value set to 0 
+DEBUG: [command] INPU4:COUN:MODE CYCL;INTE 10000;RESEt
+Value set to CYCLe
+Value set to 10000
+Counter value set to 0 
+DEBUG: [command] TSCO6:WIND:BEGI:DELA 2500
+Value set to 2500
+DEBUG: [command] TSCO6:WIND:END:DELA 7500
+Value set to 7500
+DEBUG: [command] TSCO6:COUN:MODE CYCL;INTE 10000;RESEt
+Command not enabled
+Value set to 10000
+Counter value set to 0 
+DEBUG: [command] TSCO7:WIND:BEGI:DELA 7500
+Value set to 7500
+DEBUG: [command] TSCO7:WIND:END:DELA 12500
+Value set to 12500
+DEBUG: [command] TSCO7:COUN:MODE CYCL;INTE 10000;RESEt
+Command not enabled
+Value set to 10000
+Counter value set to 0 
+DEBUG: [command] TSCO8:WIND:BEGI:DELA 12500
+Value set to 12500
+DEBUG: [command] TSCO8:WIND:END:DELA 17500
+Value set to 17500
+DEBUG: [command] TSCO8:COUN:MODE CYCL;INTE 10000;RESEt
+Command not enabled
+Value set to 10000
+Counter value set to 0 
+DEBUG: [command] TSCO3:WIND:BEGI:DELA 7500
+Value set to 7500
+DEBUG: [command] TSCO3:WIND:END:DELA 12500
+Value set to 12500
+DEBUG: [command] TSCO3:COUN:MODE CYCL;INTE 10000;RESEt
+Command not enabled
+Value set to 10000
+Counter value set to 0 
+DEBUG: [command] TSCO4:WIND:BEGI:DELA 12500
+Value set to 12500
+DEBUG: [command] TSCO4:WIND:END:DELA 17500
+Value set to 17500
+DEBUG: [command] TSCO4:COUN:MODE CYCL;INTE 10000;RESEt
+Command not enabled
+Value set to 10000
+Counter value set to 0 
+DEBUG: [command] TSCO5:WIND:BEGI:DELA 12500
+Value set to 12500
+DEBUG: [command] TSCO5:WIND:END:DELA 17500
+Value set to 17500
+DEBUG: [command] TSCO5:COUN:MODE CYCL;INTE 10000;RESEt
+Command not enabled
+Value set to 10000
+Counter value set to 0 
+DEBUG: [command] TSCO13:WIND:BEGI:DELA 0
+Value set to 0
+DEBUG: [command] TSCO13:WIND:END:DELA 10000
+Value set to 10000
+DEBUG: [command] TSCO13:COUN:MODE CYCL;INTE 10000;RESEt
+Command not enabled
+Value set to 10000
+Counter value set to 0 
+DEBUG: [command] TSCO14:WIND:BEGI:DELA 5000
+Value set to 5000
+DEBUG: [command] TSCO14:WIND:END:DELA 15000
+Value set to 15000
+DEBUG: [command] TSCO14:COUN:MODE CYCL;INTE 10000;RESEt
+Command not enabled
+Value set to 10000
+Counter value set to 0 
+DEBUG: [command] TSCO15:WIND:BEGI:DELA 0
+Value set to 0
+DEBUG: [command] TSCO15:WIND:END:DELA 10000
+Value set to 10000
+DEBUG: [command] TSCO15:COUN:MODE CYCL;INTE 10000;RESEt
+Command not enabled
+Value set to 10000
+Counter value set to 0 
+DEBUG: [command] TSCO16:WIND:BEGI:DELA 0
+Value set to 0
+DEBUG: [command] TSCO16:WIND:END:DELA 10000
+Value set to 10000
+DEBUG: [command] TSCO16:COUN:MODE CYCL;INTE 10000;RESEt
+Command not enabled
+Value set to 10000
+Counter value set to 0 
+DEBUG: [command] TSCO24:WIND:BEGI:DELA 5000
+Value set to 5000
+DEBUG: [command] TSCO24:WIND:END:DELA 15000
+Value set to 15000
+DEBUG: [command] TSCO24:COUN:MODE CYCL;INTE 10000;RESEt
+Command not enabled
+Value set to 10000
+Counter value set to 0 
+WARNING: counter intergation time > counters acquisition interval. Script will record duplicated counter values.
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\histcounters_output.csv every 1.0 seconds for 20.0 seconds...
+
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+149924496
+149924496
+0
+0
+149924496
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+149924496
+149924496
+0
+0
+149924496
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+149924496
+149924496
+0
+0
+149924496
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+149924496
+149924496
+0
+0
+149924496
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+149924496
+149924496
+0
+0
+149924496
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+149924496
+149924496
+0
+0
+149924496
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+149924496
+149924496
+0
+0
+149924496
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+149924496
+149924496
+0
+0
+149924496
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+149924496
+149924496
+0
+0
+149924496
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+149924496
+149924496
+0
+0
+149924496
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+149924497
+149924497
+0
+0
+149924497
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+149924497
+149924497
+0
+0
+149924497
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+149924497
+149924497
+0
+0
+149924497
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+149924497
+149924497
+0
+0
+149924497
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+149924497
+149924497
+0
+0
+149924497
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+149924497
+149924497
+0
+0
+149924497
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+149924497
+149924497
+0
+0
+149924497
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+149924497
+149924497
+0
+0
+149924497
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+149924497
+149924497
+0
+0
+149924497
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+0
+149924497
+149924497
+0
+0
+149924497
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
