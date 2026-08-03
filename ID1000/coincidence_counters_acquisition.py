@@ -28,16 +28,18 @@ logger = logging.getLogger(__name__)
 DEFAULT_TC_ADDRESS =  "169.254.224.106"
 
 # Default interval between counters acquisitions in seconds
-DEFAULT_ACQUISITION_INTERVAL = 3
+DEFAULT_ACQUISITION_INTERVAL = 2
+
+N_min=120
 
 # Default acquisition total duration in seconds (0 or None = infinite)
-DEFAULT_ACQUISITION_DURATION = 10
+DEFAULT_ACQUISITION_DURATION = N_min*60
 
 # File path where histogram is saved in CSV format
-DEFAULT_COUNTERS_FILEPATH = r"C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters.csv"
+DEFAULT_COUNTERS_FILEPATH = r"C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_eff_20_DT_1us_50MHz_T_2hrs.csv"
 
 # Default coincidence window in ps
-DEFAULT_COINCIDENCE_WINDOW = 5e3
+DEFAULT_COINCIDENCE_WINDOW = 1000
 
 # Default coincidence window in ns (0 or None = endless accumulation of counts)
 DEFAULT_COUNTERS_INTEGRATION_TIME = 1000

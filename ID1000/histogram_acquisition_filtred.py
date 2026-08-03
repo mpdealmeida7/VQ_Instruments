@@ -41,7 +41,7 @@ DEFAULT_WINDOW_DURATION = 500000
 DEFAULT_BIN_WIDTH = None
 
 # Generate dummy signals on all inputs (no wire required)
-DEMO_MODE = False
+DEMO_MODE = True
 
 # Default file path where histograms are saved in CSV format (None = do not save)
 DEFAULT_HISTOGRAMS_FILEPATH = None

@@ -89,3 +89,703 @@ INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instrument
 INFO: connection to DLT successful
 INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters.csv every 3 seconds for 10 seconds...
 
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters.csv every 3 seconds for 1 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_1.csv every 2 seconds for 1 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_1.csv every 2 seconds for 2 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_1.csv every 2 seconds for 2 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_1.csv every 2 seconds for 10 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_1.csv every 1 seconds for 10 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_1.csv every 2 seconds for 20 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_eff_15_DC_3us.csv every 2 seconds for 60 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_eff_15_DC_3us_T_30min.csv every 2 seconds for 1800 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_eff_15_DC_2us_T_30min.csv every 2 seconds for 1800 seconds...
+
+INFO: connection to DLT successful
+DEBUG: [command] DEVI:CONFI:LOAD COUNT
+COUNTercoincidence configuration loaded
+DEBUG: [command] DELA2:VALU?
+400TB
+DEBUG: [command] DELA6:VALU 2400
+Value set to 2400
+DEBUG: [command] DELA3:VALU?
+0TB
+DEBUG: [command] DELA7:VALU 4000
+Value set to 4000
+DEBUG: [command] DELA4:VALU?
+0TB
+DEBUG: [command] DELA8:VALU 6000
+Value set to 6000
+DEBUG: [command] STARt:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] INPU1:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] INPU2:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] INPU3:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] INPU4:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO6:WIND:BEGI:DELA 1000
+Value set to 1000
+DEBUG: [command] TSCO6:WIND:END:DELA 3000
+Value set to 3000
+DEBUG: [command] TSCO6:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO7:WIND:BEGI:DELA 3000
+Value set to 3000
+DEBUG: [command] TSCO7:WIND:END:DELA 5000
+Value set to 5000
+DEBUG: [command] TSCO7:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO8:WIND:BEGI:DELA 5000
+Value set to 5000
+DEBUG: [command] TSCO8:WIND:END:DELA 7000
+Value set to 7000
+DEBUG: [command] TSCO8:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO3:WIND:BEGI:DELA 3000
+Value set to 3000
+DEBUG: [command] TSCO3:WIND:END:DELA 5000
+Value set to 5000
+DEBUG: [command] TSCO3:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO4:WIND:BEGI:DELA 5000
+Value set to 5000
+DEBUG: [command] TSCO4:WIND:END:DELA 7000
+Value set to 7000
+DEBUG: [command] TSCO4:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO5:WIND:BEGI:DELA 5000
+Value set to 5000
+DEBUG: [command] TSCO5:WIND:END:DELA 7000
+Value set to 7000
+DEBUG: [command] TSCO5:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO13:WIND:BEGI:DELA 0
+Value set to 0
+DEBUG: [command] TSCO13:WIND:END:DELA 4000
+Value set to 4000
+DEBUG: [command] TSCO13:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO14:WIND:BEGI:DELA 2000
+Value set to 2000
+DEBUG: [command] TSCO14:WIND:END:DELA 6000
+Value set to 6000
+DEBUG: [command] TSCO14:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO15:WIND:BEGI:DELA 0
+Value set to 0
+DEBUG: [command] TSCO15:WIND:END:DELA 4000
+Value set to 4000
+DEBUG: [command] TSCO15:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO16:WIND:BEGI:DELA 0
+Value set to 0
+DEBUG: [command] TSCO16:WIND:END:DELA 4000
+Value set to 4000
+DEBUG: [command] TSCO16:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+DEBUG: [command] TSCO24:WIND:BEGI:DELA 2000
+Value set to 2000
+DEBUG: [command] TSCO24:WIND:END:DELA 6000
+Value set to 6000
+DEBUG: [command] TSCO24:COUN:MODE CYCL;INTE 1000;RESEt
+Value set to CYCLe
+Value set to 1000
+Counter value set to 0 
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\test.csv every 2.0 seconds for 60.0 seconds...
+
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999945
+108973
+106170
+0
+0
+3504
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999944
+108602
+105435
+0
+0
+3555
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999945
+108198
+105801
+0
+0
+3626
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999945
+107816
+105007
+0
+0
+3403
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999944
+108339
+105714
+0
+0
+3498
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999944
+108048
+105150
+0
+0
+3500
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999945
+108393
+105737
+0
+0
+3462
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999944
+108013
+105311
+0
+0
+3475
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999945
+108489
+105763
+0
+0
+3611
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999945
+107793
+105543
+0
+0
+3411
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999945
+108338
+105598
+0
+0
+3641
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999945
+108245
+105237
+0
+0
+3561
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999945
+108624
+105765
+0
+0
+3421
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999944
+108362
+105348
+0
+0
+3503
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999945
+108440
+105417
+0
+0
+3563
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999945
+108222
+105493
+0
+0
+3470
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999944
+108327
+105786
+0
+0
+3554
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999944
+108527
+105647
+0
+0
+3516
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999945
+108095
+105613
+0
+0
+3484
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999945
+108185
+105421
+0
+0
+3548
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999945
+108254
+105575
+0
+0
+3503
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999945
+108262
+105473
+0
+0
+3563
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999944
+108331
+105382
+0
+0
+3434
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999945
+108039
+105682
+0
+0
+3586
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999945
+108209
+105405
+0
+0
+3383
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999945
+108288
+105490
+0
+0
+3444
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999945
+108458
+105593
+0
+0
+3439
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999945
+108409
+105267
+0
+0
+3514
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999944
+107987
+105721
+0
+0
+3628
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+DEBUG: [command] STARt:COUNter?;:INPU1:COUNter?;:INPU2:COUNter?;:INPU3:COUNter?;:INPU4:COUNter?;:TSCO6:COUNter?;:TSCO7:COUNter?;:TSCO8:COUNter?;:TSCO3:COUNter?;:TSCO4:COUNter?;:TSCO5:COUNter?;:TSCO13:COUNter?;:TSCO14:COUNter?;:TSCO15:COUNter?;:TSCO16:COUNter?;:TSCO24:COUNter?
+49999944
+108543
+105772
+0
+0
+3534
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_eff_15_DC_2us_T_30min.csv every 2 seconds for 1800 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_eff_15_DC_2us_T_30min.csv every 2 seconds for 1800 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_eff_13_DT_3us_T_30min.csv every 2 seconds for 1800 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_eff_13_DT_3us_T_30min.csv every 2 seconds for 600 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_eff_12_DT_3us_80MHz_T_30min.csv every 2 seconds for 600 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_eff_12_DT_3us_80MHz_T_30min.csv every 2 seconds for 600 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_eff_12_DT_3us_80MHz_T_30min.csv every 2 seconds for 1800 seconds...
+
+INFO: Stop recording counters.
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_eff_12_DT_3us_80MHz_T_30min.csv every 2 seconds for 1800 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_eff_12_DT_3us_80MHz_T_30min.csv every 2 seconds for 1800 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_eff_20_DT_1us_50MHz_T_2hrs.csv every 2 seconds for 1800 seconds...
+
+INFO: Stop recording counters.
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_eff_20_DT_1us_50MHz_T_2hrs.csv every 2 seconds for 7200 seconds...
+

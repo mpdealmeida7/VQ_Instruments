@@ -1,0 +1,9 @@
+run_id,timestamp,attenuation_dB,csv_file,log_file,note
+20260728_153356,20260728_153356,-20.0,att_-20p00dB_run_20260728_153356.csv,att_-20p00dB_run_20260728_153356.log,"dark-count/background check, 2 us delay condition"
+20260728_153627,20260728_153627,-18.0,att_-18p00dB_run_20260728_153627.csv,att_-18p00dB_run_20260728_153627.log,"dark-count/background check, 2 us delay condition"
+20260728_153846,20260728_153846,-16.0,att_-16p00dB_run_20260728_153846.csv,att_-16p00dB_run_20260728_153846.log,"dark-count/background check, 2 us delay condition"
+20260728_154107,20260728_154107,-14.0,att_-14p00dB_run_20260728_154107.csv,att_-14p00dB_run_20260728_154107.log,"dark-count/background check, 2 us delay condition"
+20260728_154330,20260728_154330,-12.0,att_-12p00dB_run_20260728_154330.csv,att_-12p00dB_run_20260728_154330.log,"dark-count/background check, 2 us delay condition"
+20260728_154611,20260728_154611,-10.0,att_-10p00dB_run_20260728_154611.csv,att_-10p00dB_run_20260728_154611.log,"dark-count/background check, 2 us delay condition"
+20260728_154908,20260728_154908,-8.0,att_-8p00dB_run_20260728_154908.csv,att_-8p00dB_run_20260728_154908.log,"dark-count/background check, 2 us delay condition"
+20260728_155137,20260728_155137,-6.0,att_-6p00dB_run_20260728_155137.csv,att_-6p00dB_run_20260728_155137.log,"dark-count/background check, 2 us delay condition"

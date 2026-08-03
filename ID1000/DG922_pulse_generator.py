@@ -360,11 +360,11 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--resource", default=DEFAULT_RESOURCE, help="PyVISA resource string")
 
-    parser.add_argument("--rate", type=float, default=15e6, help="Pulse repetition rate (Hz)")
-    parser.add_argument("--pulse-width", type=float, default=10e-9, help="Pulse width (seconds)")
-    parser.add_argument("--delay", type=float, default=30e-9, help="CH2 delay relative to CH1 (seconds)")
+    parser.add_argument("--rate", type=float, default=5e6, help="Pulse repetition rate (Hz)")
+    parser.add_argument("--pulse-width", type=float, default=9e-9, help="Pulse width (seconds)")
+    parser.add_argument("--delay", type=float, default=0e-9, help="CH2 delay relative to CH1 (seconds)")
 
-    parser.add_argument("--ttl-low", type=float, default=0.0, help="TTL low level (V)")
+    parser.add_argument("--ttl-low", type=float, default=-1.0, help="TTL low level (V)")
     parser.add_argument("--ttl-high", type=float, default=5.0, help="TTL high level (V)")
     parser.add_argument("--rise", type=float, default=3e-9, help="Edge rise time (seconds)")
     parser.add_argument("--fall", type=float, default=3e-9, help="Edge fall time (seconds)")

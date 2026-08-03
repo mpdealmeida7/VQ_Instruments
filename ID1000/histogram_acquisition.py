@@ -33,7 +33,7 @@ DEFAULT_BIN_COUNT =20
 DEFAULT_BIN_WIDTH = 10e5
 
 # Default file path where histograms are saved in CSV format (None = do not save)
-DEFAULT_HISTOGRAMS_FILEPATH = None#r"C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\hist1.csv"
+DEFAULT_HISTOGRAMS_FILEPATH = r"C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\hist1.csv"
 
 # Default list of histograms to acquire
 #DEFAULT_HISTOGRAMS = [1, 2, 3, 4]

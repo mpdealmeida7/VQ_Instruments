@@ -1,0 +1,14 @@
+{
+  "run_id": "20260731_111915",
+  "measurement_condition": "Nucrypt_CH44_CH24_DT_1us_eff_20_Freq_80MHz",
+  "attenuation_dB": -10.0,
+  "run_note": "dark-count/background check, 2 us delay condition",
+  "timestamp": "20260731_111915",
+  "csv_file": "att_-10p00dB_run_20260731_111915.csv",
+  "log_file": "att_-10p00dB_run_20260731_111915.log",
+  "tc_address": "169.254.224.106",
+  "acquisition_interval_s": 2,
+  "acquisition_duration_s": 120,
+  "coincidence_window_ps": 1000,
+  "counters_integration_time_ns": 1000
+}

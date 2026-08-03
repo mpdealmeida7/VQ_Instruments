@@ -1,0 +1,14 @@
+{
+  "run_id": "20260706_103032",
+  "measurement_condition": "Nucrypt_CH43_CH25_DC_2us_window_1ns_50MHz",
+  "attenuation_dB": -8.0,
+  "run_note": "dark-count/background check, 2 us delay condition",
+  "timestamp": "20260706_103032",
+  "csv_file": "att_-8p00dB_run_20260706_103032.csv",
+  "log_file": "att_-8p00dB_run_20260706_103032.log",
+  "tc_address": "169.254.224.106",
+  "acquisition_interval_s": 2,
+  "acquisition_duration_s": 60,
+  "coincidence_window_ps": 1000,
+  "counters_integration_time_ns": 1000
+}
