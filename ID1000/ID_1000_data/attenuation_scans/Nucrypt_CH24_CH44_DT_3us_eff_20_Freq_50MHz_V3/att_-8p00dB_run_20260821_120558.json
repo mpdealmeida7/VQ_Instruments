@@ -1,0 +1,14 @@
+{
+  "run_id": "20260821_120558",
+  "measurement_condition": "Nucrypt_CH24_CH44_DT_3us_eff_20_Freq_50MHz_V3",
+  "attenuation_dB": -8.0,
+  "run_note": "using CH24 as heralding",
+  "timestamp": "20260821_120558",
+  "csv_file": "att_-8p00dB_run_20260821_120558.csv",
+  "log_file": "att_-8p00dB_run_20260821_120558.log",
+  "tc_address": "169.254.224.106",
+  "acquisition_interval_s": 2,
+  "acquisition_duration_s": 300,
+  "coincidence_window_ps": 1000,
+  "counters_integration_time_ns": 1000
+}

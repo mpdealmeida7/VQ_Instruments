@@ -1,0 +1,16 @@
+run_id,timestamp,attenuation_dB,csv_file,log_file,note
+20260821_091123,20260821_091123,-6.0,att_-6p00dB_run_20260821_091123.csv,att_-6p00dB_run_20260821_091123.log,"dark-count/background check, 2 us delay condition"
+20260821_091815,20260821_091815,-20.0,att_-20p00dB_run_20260821_091815.csv,att_-20p00dB_run_20260821_091815.log,"dark-count/background check, 2 us delay condition"
+20260821_092429,20260821_092429,-18.0,att_-18p00dB_run_20260821_092429.csv,att_-18p00dB_run_20260821_092429.log,"dark-count/background check, 2 us delay condition"
+20260821_093130,20260821_093130,-16.0,att_-16p00dB_run_20260821_093130.csv,att_-16p00dB_run_20260821_093130.log,"dark-count/background check, 2 us delay condition"
+20260821_093706,20260821_093706,-14.0,att_-14p00dB_run_20260821_093706.csv,att_-14p00dB_run_20260821_093706.log,"dark-count/background check, 2 us delay condition"
+20260821_094227,20260821_094227,-12.0,att_-12p00dB_run_20260821_094227.csv,att_-12p00dB_run_20260821_094227.log,"dark-count/background check, 2 us delay condition"
+20260821_094743,20260821_094743,-10.0,att_-10p00dB_run_20260821_094743.csv,att_-10p00dB_run_20260821_094743.log,"dark-count/background check, 2 us delay condition"
+20260821_095259,20260821_095259,-8.0,att_-8p00dB_run_20260821_095259.csv,att_-8p00dB_run_20260821_095259.log,"dark-count/background check, 2 us delay condition"
+20260821_095836,20260821_095836,-6.0,att_-6p00dB_run_20260821_095836.csv,att_-6p00dB_run_20260821_095836.log,"dark-count/background check, 2 us delay condition"
+20260821_101618,20260821_101618,-20.0,att_-20p00dB_run_20260821_101618.csv,att_-20p00dB_run_20260821_101618.log,using CH24 as heralding
+20260821_102137,20260821_102137,-18.0,att_-18p00dB_run_20260821_102137.csv,att_-18p00dB_run_20260821_102137.log,using CH24 as heralding
+20260821_102655,20260821_102655,-16.0,att_-16p00dB_run_20260821_102655.csv,att_-16p00dB_run_20260821_102655.log,using CH24 as heralding
+20260821_103211,20260821_103211,-14.0,att_-14p00dB_run_20260821_103211.csv,att_-14p00dB_run_20260821_103211.log,using CH24 as heralding
+20260821_103723,20260821_103723,-12.0,att_-12p00dB_run_20260821_103723.csv,att_-12p00dB_run_20260821_103723.log,using CH24 as heralding
+20260821_104258,20260821_104258,-10.0,att_-10p00dB_run_20260821_104258.csv,att_-10p00dB_run_20260821_104258.log,using CH24 as heralding

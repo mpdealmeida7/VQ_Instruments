@@ -21,15 +21,15 @@ from rigol_mho984_data_acquisition_fixed import (
 # ---------------------------------------------------------------------
 # User settings
 # ---------------------------------------------------------------------
-CHANNEL = 2
+CHANNEL = 1
 
 OUTPUT_DIR = (
     r"C:\Users\Experiment\Documents\Python"
     r"\VQ_Instruments\my_modules\oscilloscope_data"
 )
 
-VERTICAL_SCALE_V_PER_DIV = 1.0
-TIMEBASE_S_PER_DIV = 1e-3
+VERTICAL_SCALE_V_PER_DIV = 1e-3
+TIMEBASE_S_PER_DIV = 1e-6
 TRIGGER_LEVEL_V = 0.0
 ACQUISITION_SETTLING_TIME_S = 2.0
 

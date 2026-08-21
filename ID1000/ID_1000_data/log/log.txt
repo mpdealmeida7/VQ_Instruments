@@ -789,3 +789,9 @@ INFO: Stop recording counters.
 INFO: connection to DLT successful
 INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_eff_20_DT_1us_50MHz_T_2hrs.csv every 2 seconds for 7200 seconds...
 
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_eff_20_DT_1us_80MHz_T_30hrs.csv every 2 seconds for 1800 seconds...
+
+INFO: connection to DLT successful
+INFO: recording counters into C:\Users\Experiment\Documents\Python\VQ_Instruments\ID1000\ID_1000_data\hist\counters_eff_20_DT_1us_80MHz_T_30hrs.csv every 2 seconds for 10800 seconds...
+

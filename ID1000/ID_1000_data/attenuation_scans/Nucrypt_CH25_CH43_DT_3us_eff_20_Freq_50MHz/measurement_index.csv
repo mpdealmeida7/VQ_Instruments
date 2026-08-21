@@ -1,0 +1,2 @@
+run_id,timestamp,attenuation_dB,csv_file,log_file,note
+20260821_125123,20260821_125123,-20.0,att_-20p00dB_run_20260821_125123.csv,att_-20p00dB_run_20260821_125123.log,using CH25 as heralding
